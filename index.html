@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- FONT -->
+        <link href="https://fonts.cdnfonts.com/css/made-evolve-sans" rel="stylesheet">
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>YTMTOOLS</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="wrap">
+
+        <h1>IGMAKER</h1>
+        <div class="parametersSection">
+            <div class="input"><div class="name">WIDTH</div><input id="widthInput" type="number" placeholder="szerokość grafiki"></div>
+            <div class="input"><div class="name">HEIGHT</div><input id="heightInput" type="number" placeholder="wysokość grafiki"></div>
+            <div class="input"><div class="name">SIZE</div><input id="sizeInput" type="number" placeholder="wielkość tekstu"></div>
+            <div class="input"><div class="name">ICON SIZE</div><input id="iconSizeInput" type="number" placeholder="wielkość ikonki"></div>
+            <div class="input"><div class="name">ROUNDNESS</div><input id="roundInput" type="number"placeholder="numer od 0-100"></div>
+            <div class="input"><div class="name">COLOR</div><input id="colorInput" type="color" value="#000000"></div>
+            <div class="input"><div class="name">TEXT COLOR</div><input id="textColorInput" type="color" value="#ffffff"></div>
+            <div class="input"><div class="name">OPACITY</div><input id="opacityInput" type="number" placeholder="np. 0.7"></div>
+
+
+            <div class="input"><div class="name">NAME</div><input id="nameInput" type="text" placeholder="nazwa osoby"></div>
+            <div class="przyciski">
+                <button id="generate" class="generate">GENERATE</button>
+                <button id="gitem" class="gitem">EXAMPLE</button>
+            </div>
+         
+
+        </div>
+
+        <div id="resultSection" class="resultSection">
+
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
